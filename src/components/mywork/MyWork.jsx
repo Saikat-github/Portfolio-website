@@ -24,8 +24,8 @@ const MyWork = () => {
       <div className="mywork-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 mx-2 md:mx-0 transition duration-500">
         {mywork_data.map((work, idx) => {
           return <a href={work.w_link ? work.w_link : notDeployedUrl} key={idx} className={`sm:w-96 h-72 rounded-xl ${showProjects.includes(idx) ? (!showmore ? "hidden" : "inline") : ""}`}>
-            <img src={work.w_img} key={idx} className='box-border w-96 h-64 cursor-pointer hover:scale-105 hover:border-4 hover:border-pink-700 hover:rounded-xl transition duration-300 object-contain rounded-xl' />
-            <h1 className='text-center py-1'>{work.w_info}</h1>
+            <img src={work.w_img} key={idx} className='box-border w-96  cursor-pointer hover:scale-105 hover:border-4 hover:border-pink-700 hover:rounded-xl transition duration-300 object-contain rounded-xl' />
+            <h1 className='text-center py-4'>{work.w_info}</h1>
           </a>
 
 
