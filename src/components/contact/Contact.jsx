@@ -47,11 +47,11 @@ const Contact = () => {
                     <p className='max-w-80 text-xs'>I'm currently available to take on new projects, so feel free to send me a message about anything you want.</p>
                     <div className="contact-details flex flex-col gap-7 text-gray-100 text-xs">
                         <div className="contact-detail  flex items-center gap-5">
-                            <img src={mail_icon} alt="" /> <p>saikatsaha782@gmail.com</p>
+                            <img src={mail_icon} alt="" /> <p>sahasaikat782@gmail.com</p>
                         </div>
                         <div className="contact-detail  flex items-center gap-5">
                             <img src={call_icon} alt="" />
-                            <p>+772-825-524</p>
+                            <p>+91-0000000000</p>
                         </div>
                         <div className="contact-detail  flex items-center gap-5">
                             <img src={location_icon} alt="" />
