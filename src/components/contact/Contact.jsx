@@ -11,11 +11,11 @@ const Contact = () => {
     const {register, handleSubmit, reset, formState:{isSubmitting}} = useForm();
 
     const onSubmit = async (data, event) => {
-        const forlgata = new Forlgata(event.target);
+        const formData = new FormData(event.target);
     
-        forlgata.append("access_key", "63d740be-1b73-4bb4-aefd-85f52a94c860");
+        formData.append("access_key", "63d740be-1b73-4bb4-aefd-85f52a94c860");
     
-        const object = Object.fromEntries(forlgata);
+        const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
     
         const res = await fetch("https://api.web3forms.com/submit", {
