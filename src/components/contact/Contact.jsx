@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
@@ -9,9 +9,14 @@ import { useForm } from 'react-hook-form'
 
 const Contact = () => {
     const {register, handleSubmit, reset, formState:{isSubmitting}} = useForm();
+    const [error, setError] = useState(null);
+    const [loader, setLoader] = useState(false);
 
     const onSubmit = async (data, event) => {
-        const formData = new FormData(event.target);
+        setError(null);
+        setLoader(true);
+        try {
+            const formData = new FormData(event.target);
     
         formData.append("access_key", "63d740be-1b73-4bb4-aefd-85f52a94c860");
     
@@ -30,11 +35,18 @@ const Contact = () => {
         if (res.success) {
             alert(res.message);
         }
-        reset();
+        } catch (error) {
+            setError(error.message);
+        } finally {
+            setLoader(false);
+            reset();
+        }
+        
       };
 
     
 
+    
     return (
         <div className="contact flex flex-col items-center gap-16 py-20" id='contact'>
             <div className="contact-title relative">
@@ -70,7 +82,10 @@ const Contact = () => {
                     <label className='text-sm text-gray-200' htmlFor="">Write your message here</label>
                     <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none lg:w-96 w-[80%] h-10 lg:h-32 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7 pt-4'></textarea>
 
-                    <button className='contact-submit py-2 px-6 bg-gradient-to-r from-[#DF8908] to-[#B415FF] rounded-full hover:scale-105 transition-[0.5s]' type='submit' disabled={isSubmitting}>Submit Now</button>
+                    <div className='flex items-center gap-2'>
+                    <button className='contact-submit py-2 px-6 bg-gradient-to-r from-[#DF8908] to-[#B415FF] rounded-full hover:scale-105 transition-[0.5s]' type='submit' disabled={isSubmitting}>{error ? <span>{error}</span> : "Submit Now" }</button>
+                    {loader ? <span className='w-6 h-6 border-4 rounded-full animate-spin border-dotted'></span> : null}
+                    </div>
                 </form>
             </div>
         </div>
