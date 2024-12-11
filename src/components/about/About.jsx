@@ -9,10 +9,7 @@ const About = () => {
         <div className="about-title flex justify-center py-20">
             <h1 className='text-6xl font-semibold'>About Me</h1>
         </div>
-        <div className="about md:mx-20 flex md:gap-20 mx-10 items-center">
-            <div className="about-left">
-                <img src={profile_img} className='hidden md:inline' />
-            </div>
+        <div className="about md:mx-20 flex md:gap-20 mx-10 items-center justify-center">
             <div className="about-right">
                 <div className="about-para md:w-3/4 text-sm mb-6 space-y-6">
                     <p>I am an experienced Frontend Developer with professional expertise in the field.</p>
