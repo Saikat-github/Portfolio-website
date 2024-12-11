@@ -42,7 +42,7 @@ const mywork_data = [
         w_name:"Web design",
         w_img:project5_img,
         w_info: "Food Delivery WebApp(MERN)",
-        w_link: ""
+        w_link: "https://fooddeliver-myversion-frontend.onrender.com/"
     },
     {
         w_no:6,
