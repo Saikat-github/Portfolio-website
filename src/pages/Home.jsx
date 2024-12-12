@@ -4,12 +4,11 @@ import { About, Contact, Footer, Hero, MyWork, Navbar, Services } from '../compo
 const Home = () => {
   return (
     <div>
-
         <Hero />
         <hr className='w-3/4 mx-auto bg-sky-800'/>
         <About />
-        <Services />
         <MyWork />
+        <Services />
         <Contact />
       
     </div>

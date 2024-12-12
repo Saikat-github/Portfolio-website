@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 const MENU_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "About Me", href: "#about" },
-  { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#mywork" },
+  { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -24,8 +24,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-xl lg:items-center bg-[rgb(21,21,61)] sticky top-0 z-20'>
-      <Link to={"/"}><img src={logo} alt="Logo" className='nav-logo w-16 h-14 rounded-md' /></Link>
+    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-xl lg:items-center  sticky top-0 z-20 bg-[rgb(0,0,33)]'>
+      <Link to={"/"}><img src={logo} alt="Logo" className='nav-logo w-16 h-14 rounded-md object-cover' /></Link>
 
       {/* Menu open icon */}
       {!showSidebar && (
