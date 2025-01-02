@@ -7,6 +7,7 @@ import project6_img from '../assets/project_6.png'
 import project7_img from '../assets/project_7.png'
 import project8_img from '../assets/project_8.png'
 import project9_img from '../assets/project_9.png'
+import project10_img from '../assets/project_10.png'
 
 const mywork_data = [
     {
@@ -21,7 +22,7 @@ const mywork_data = [
         w_name:"Web design",
         w_img:project2_img,
         w_info: "Personal Training Website(React)",
-        w_link: "https://fitness-website-snowy.vercel.app/"
+        w_link: "https://www.zerodiet.in/"
     },
     {
         w_no:3,
@@ -48,8 +49,8 @@ const mywork_data = [
         w_no:6,
         w_name:"Web design",
         w_img:project6_img,
-        w_info: "Amazon Clone",
-        w_link: ""
+        w_info: "Background Removal (MERN)",
+        w_link: "https://bg-removal-frontend-one.vercel.app/"
     },
     {
         w_no:7,
@@ -66,12 +67,19 @@ const mywork_data = [
         w_link: ""  
     },
     {
-        w_no:6,
+        w_no:9,
         w_name:"Web design",
         w_img:project9_img,
         w_info: "Myntra Clone",
         w_link: ""  
-    }
+    },
+    {
+        w_no:10,
+        w_name:"Web design",
+        w_img:project10_img,
+        w_info: "Amazon Clone",
+        w_link: ""
+    },
 ]
  
 export default mywork_data;

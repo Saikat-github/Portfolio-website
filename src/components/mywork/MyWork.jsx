@@ -8,7 +8,7 @@ import { useMemo } from 'react';
 
 const MyWork = () => {
   const [showmore, setShowmore] = useState(false);
-  const showProjects = [6, 7, 8]
+  const showProjects = [6, 7, 8, 9]
   const rootUrl = window.location.origin;
   const notDeployedUrl = useMemo(() => `${rootUrl}/notdeployed`, []);
 

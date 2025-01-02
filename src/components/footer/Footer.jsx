@@ -4,6 +4,7 @@ import user_icon from '../../assets/user_icon.svg'
 import facebook from '../../assets/facebook-white.svg'
 import instagram from '../../assets/instagram-white.svg'
 import twitter from '../../assets/twitter-white.svg'
+import linkedin from '../../assets/linkedin.svg'
 
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
                     
                     <div className='flex gap-8 py-2'>
                         <a href="https://www.instagram.com/saikaatsaha/"><img src={instagram} className='w-6 cursor-pointer hover:scale-110 transition duration-200' alt="" /></a>
-                        <a href=""><img src={facebook} className='w-6 cursor-pointer hover:scale-110 transition duration-200' alt="" /></a>
+                        <a href=""><img src={linkedin} className='w-6 cursor-pointer hover:scale-110 transition duration-200' alt="" /></a>
                         <a href="https://x.com/Saikaatsaha"><img src={twitter} className='w-6 cursor-pointer hover:scale-110 transition duration-200' alt="" /></a>
                     </div>
 
