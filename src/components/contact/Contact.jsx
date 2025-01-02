@@ -48,7 +48,7 @@ const Contact = () => {
 
     
     return (
-        <div className="contact flex flex-col items-center gap-16 py-20" id='contact'>
+        <div className="contact flex flex-col items-center gap-16 py-20 px-2" id='contact'>
             <div className="contact-title relative">
                 <h1 className='text-6xl font-semibold text-center'>Get in touch</h1>
                 <img src={theme_pattern} className='absolute right-0 bottom-0 -z-10' />
