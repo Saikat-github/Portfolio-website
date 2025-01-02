@@ -1,13 +1,14 @@
 import React from 'react'
-import profile_img from '../../assets/profile_img.svg'
+import profile_img2 from '../../assets/profile_img.svg'
+import profile_img from '../../assets/profile_img.png'
 
 
 
 
 const Hero = () => {
   return (
-    <div className='hero flex items-center flex-col gap-8 py-20' id='home'>
-      {/* <img src={profile_img} className='mt-24 hidden sm:inline' /> */}
+    <div className='hero flex items-center flex-col gap-8 pb-20 pt-4' id='home'>
+      <img src={profile_img} className='mt-4 w-60 h-60 object-cover rounded-full' />
       <h1 className='sm:w-2/3 text-3xl sm:text-5xl text-center text-white font-semibold'>I'm <span className='text-purple-800'>Saikat Saha</span>, a Passionate <span className='text-purple-800'>Frontend Developer</span> based in India.</h1>
       <p className='text-white text-xl sm:w-2/3 text-center'>With experience in building real world, production grade projects</p>
       <div className="hero-action flex flex-col md:flex-row gap-4 text-xl text-[rgb(0,0,33)]">
