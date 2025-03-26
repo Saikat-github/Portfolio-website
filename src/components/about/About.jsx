@@ -12,8 +12,8 @@ const About = () => {
         <div className="about md:mx-20 flex md:gap-20 mx-10 items-center justify-center">
             <div className="about-right">
                 <div className="about-para md:w-3/4 text-sm mb-6 space-y-6">
-                    <p>I am an experienced Frontend Developer with professional expertise in the field.</p>
-                    <p>My passion for frontend development is reflected in the enthusiasm and dedication I bring to each project.</p>
+                    <p>I am an experienced Web Developer with professional expertise in the field.</p>
+                    <p>My passion for web development is reflected in the enthusiasm and dedication I bring to each project.</p>
                 </div>
                 <div className="about-skills flex flex-col gap-4 text-xl ">
                     <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
@@ -28,10 +28,14 @@ const About = () => {
                         <p className='w-32'>Javascript</p>
                         <hr className='w-3/4 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
                     </div>
-                    {/* <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
-                        <p className='w-32'>Next JS</p>
-                        <hr className='w-1/2 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
-                    </div> */}
+                    <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
+                        <p className='w-32'>Node JS</p>
+                        <hr className='w-2/3 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                    </div>
+                    <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
+                        <p className='w-32'>MongoDB</p>
+                        <hr className='w-3/4 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,7 +45,7 @@ const About = () => {
             <hr className='bg-white md:w-0.5 md:h-12 w-12 h-0.5' />
             <Achieve number={30} detail="PROJECTS COMPLETED" />
             <hr className='bg-white md:w-0.5 md:h-12 w-12 h-0.5' />
-            <Achieve number={10} detail="PRODUCTION GRADE PROJECTS" />
+            <Achieve number={5} detail="PRODUCTION GRADE PROJECTS" />
         </div>
     </div>
   )

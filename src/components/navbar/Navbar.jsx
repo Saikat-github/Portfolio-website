@@ -29,12 +29,12 @@ const Navbar = () => {
 
       {/* Menu open icon */}
       {!showSidebar && (
-        <img src={menu_open} onClick={() => setShowSidebar(true)} className="inline lg:hidden cursor-pointer w-10 -z-10" />
+        <img src={menu_open} onClick={() => setShowSidebar(true)} className="inline lg:hidden cursor-pointer w-6 -z-10" />
       )}
 
       {/* Navigation Menu */}
       <ul
-        className={`nav-menu flex lg:flex-row flex-col gap-6 absolute right-0 top-0
+        className={`nav-menu flex lg:flex-row flex-col gap-10 absolute right-0 top-0 text-sm
           ${showSidebar ? ' w-48 py-4 h-screen bg-[#1F0016] px-12 space-y-6' : 'hidden lg:flex'} lg:static lg:w-auto lg:py-0 lg:h-auto lg:bg-transparent lg:px-0 lg:space-y-0`}
       >
         {/* Menu close icon */}
@@ -57,7 +57,7 @@ const Navbar = () => {
       </ul>
 
       {/* Connect Button */}
-      <div className="hidden lg:block nav-connect px-10 py-4 bg-gradient-to-r from-yellow-700 to-purple-700 rounded-full cursor-pointer hover:scale-105 transition duration-300">
+      <div className="hidden lg:block nav-connect px-4 py-2 bg-gradient-to-r from-yellow-700 to-purple-700 rounded-full cursor-pointer hover:scale-105 transition duration-300 text-sm">
         <AnchorLink offset={50} href="#contact">
           Connect With Me
         </AnchorLink>

@@ -56,14 +56,13 @@ const Contact = () => {
             <div className="contact-section flex flex-col lg:flex-row gap-36 items-center">
                 <div className="contact-left flex flex-col gap-8">
                     <h1 className='text-5xl font-medium bg-gradient-to-r from-[#DF8908] to-[#B415FF] bg-clip-text text-transparent'>Let's talk </h1>
-                    <p className='max-w-80 text-xs'>I'm currently available to take on new projects, so feel free to send me a message about anything you want.</p>
                     <div className="contact-details flex flex-col gap-7 text-gray-100 text-xs">
                         <div className="contact-detail  flex items-center gap-5">
-                            <img src={mail_icon} alt="" /> <p>sahasaikat782@gmail.com</p>
+                            <img src={mail_icon} alt="" /> <p>saikatservices@gmail.com</p>
                         </div>
                         <div className="contact-detail  flex items-center gap-5">
                             <img src={call_icon} alt="" />
-                            <p>+91-0000000000</p>
+                            <p>+91 9635473546</p>
                         </div>
                         <div className="contact-detail  flex items-center gap-5">
                             <img src={location_icon} alt="" />
@@ -72,12 +71,12 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form onSubmit={handleSubmit(onSubmit)} className='contact-right flex flex-col items-start gap-5 w-full'>
+                <form onSubmit={handleSubmit(onSubmit)} className='contact-right flex flex-col items-start gap-2 w-full'>
                     <label className='text-sm text-gray-200' >Your Name</label>
-                    <input className='border-none lg:w-96 w-[80%] h-10 lg:h-20 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
+                    <input className='border-none lg:w-96 w-[80%] h-10 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
 
                     <label className='text-sm text-gray-200' htmlFor="">Your Email</label>
-                    <input className='border-none lg:w-96 w-[80%] h-10 lg:h-20 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
+                    <input className='border-none lg:w-96 w-[80%] h-10 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
 
                     <label className='text-sm text-gray-200' htmlFor="">Write your message here</label>
                     <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none lg:w-96 w-[80%] h-10 lg:h-32 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7 pt-4'></textarea>
