@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className="footer text-xs flex flex-col py-20 md:px-32 px-8 gap-10 bg-gray-950">
             <div className="footer-top flex md:flex-row flex-col gap-10 md:gap-0 justify-between ">
-                <div className="footer-top-left flex sm:flex-row flex-col justify-around w-full">
+                <div className="footer-top-left flex sm:flex-row flex-col  justify-center sm:justify-around w-full items-center max-sm:gap-6">
                     <img src={footer_logo} className='nav-logo w-16 h-14 rounded-md mb-2' />
 
                     <div className='flex gap-8 py-2'>
