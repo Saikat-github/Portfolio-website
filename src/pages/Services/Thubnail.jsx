@@ -4,7 +4,7 @@ const Thubnail = () => {
   return (
     <div className='px-10 py-6 w-full'>
             <div className='flex justify-center items-center text-center'>
-            <h1 className='text-2xl font-semibold my-6 py-2 border-4 border-pink-600 shadow shadow-pink-500 rounded-full w-72'>THUBNAIL DESIGN</h1>
+            <h1 className='text-2xl font-semibold my-6 py-2 border-4 border-pink-600 rounded-full w-72'>THUBNAIL DESIGN</h1>
             </div>
 
             <div className='mt-10 sm:w-1/2 w-full mx-auto'>

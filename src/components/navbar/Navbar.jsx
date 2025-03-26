@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const MENU_ITEMS = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "/" },
   { label: "About Me", href: "#about" },
   { label: "Portfolio", href: "#mywork" },
   { label: "Services", href: "#services" },

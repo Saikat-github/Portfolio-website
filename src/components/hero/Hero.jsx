@@ -18,9 +18,9 @@ const Hero = () => {
           </a>
 
         </button>
-        <a href="/saikatresume.pdf" download>
+        <a href="/saikatresume (1).pdf" download>
           <button className="hero-resume px-10 py-2 bg-gray-100 hover:bg-purple-700 text-purple-700 hover:text-white rounded-full cursor-pointer text-lg transition duration-200">
-            My Resume
+            Download My Resume
           </button>
         </a>
       </div>
