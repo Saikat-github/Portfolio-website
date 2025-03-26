@@ -1,4 +1,5 @@
-import Navbar from "./navbar/Navbar";
+import HeaderNavbar from "./navbar/HeaderNavbar";
+import MainNavbar from "./navbar/MainNavbar";
 import Hero from "./hero/Hero";
 import About from "./about/About";
 import Services from "./services/Services";
@@ -8,6 +9,6 @@ import Footer from "./footer/Footer";
 
 
 
-export {Navbar, Hero, About, Services, MyWork, Contact,
-    Footer
+export { Hero, About, Services, MyWork, Contact,
+    Footer, HeaderNavbar, MainNavbar
 };

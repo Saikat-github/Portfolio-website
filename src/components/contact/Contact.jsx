@@ -75,10 +75,10 @@ const Contact = () => {
                     <label className='text-sm text-gray-200' >Your Name</label>
                     <input className='border-none lg:w-96 w-[80%] h-10 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
 
-                    <label className='text-sm text-gray-200' htmlFor="">Your Email</label>
+                    <label className='text-sm text-gray-200'>Your Email</label>
                     <input className='border-none lg:w-96 w-[80%] h-10 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
 
-                    <label className='text-sm text-gray-200' htmlFor="">Write your message here</label>
+                    <label className='text-sm text-gray-200'>Write your message here</label>
                     <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none lg:w-96 w-[80%] h-10 lg:h-32 rounded-lg bg-gray-600 text-gray-200 text-xs pl-7 pt-4'></textarea>
 
                     <div className='flex items-center gap-2'>

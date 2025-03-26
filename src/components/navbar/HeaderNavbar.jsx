@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 
 
 const MENU_ITEMS = [
-  { label: "Home", href: "/" },
+  { label: "To Top", href: "#totop" },
   { label: "About Me", href: "#about" },
   { label: "Portfolio", href: "#mywork" },
   { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
-const Navbar = () => {
-  const [menu, setMenu] = useState("Home");
+const HeaderNavbar = () => {
+  const [menu, setMenu] = useState("totop");
   const [showSidebar, setShowSidebar] = useState(false);
 
   const onClickHandler = useCallback((navItem) => {
@@ -66,4 +66,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HeaderNavbar;

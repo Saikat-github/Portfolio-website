@@ -7,7 +7,7 @@ import profile_img from '../../assets/profile_img.png'
 
 const Hero = () => {
   return (
-    <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-2' id='home'>
+    <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-2' id='totop'>
       {/* <img src={profile_img} className='mt-4 w-60 h-60 object-cover rounded-full' /> */}
       <h1 className='sm:w-2/3 text-3xl sm:text-5xl text-center text-white font-semibold'>I'm <span className='text-purple-800'>Saikat Saha</span>, a Passionate <span className='text-purple-800'>Full Stack Web Developer</span> based in India.</h1>
       <p className='text-white text-xl sm:w-2/3 text-center'>With experience in building real world, production grade projects</p>

@@ -8,6 +8,7 @@ import NotDeployed from './pages/NotDeployed.jsx'
 import WebDev from './pages/Services/WebDev.jsx'
 import VideoEditing from './pages/Services/VideoEditing.jsx'
 import Thubnail from './pages/Services/Thubnail.jsx'
+import { MainNavbar } from './components/index.js'
 
 const router = createBrowserRouter([
   {
@@ -20,19 +21,31 @@ const router = createBrowserRouter([
       },
       {
         path: "/notdeployed",
-        element: <NotDeployed />
+        element: <>
+          <MainNavbar />
+          <NotDeployed />
+        </>
       },
       {
         path: "/web-dev",
-        element: <WebDev />
-      }, 
+        element: <>
+          <MainNavbar />
+          <WebDev />
+        </>
+      },
       {
         path: "/video-editing",
-        element: <VideoEditing />
-      }, 
+        element: <>
+          <MainNavbar />
+          <VideoEditing />
+        </>
+      },
       {
         path: "/thumbnail",
-        element: <Thubnail />
+        element: <>
+          <MainNavbar />
+          <Thubnail />
+        </>
       }
     ]
   }
