@@ -24,7 +24,7 @@ const MainNavbar = () => {
   }, []);
 
   return (
-    <div className='flex justify-between lg:px-12 px-4 py-1 text-sm items-center  sticky top-0 z-20 bg-[rgb(0,0,33)] h-16'>
+    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-sm lg:items-center  sticky top-0 z-20 bg-[rgb(0,0,33)]'>
       <Link to={"/"}><img src={logo} alt="Logo" className='nav-logo w-16 h-14 rounded-md object-cover' /></Link>
       <Link to={"/"} className='text-pink-600 px-4 py-2 rounded'>
       Back Home
