@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const MENU_ITEMS = [
-  { label: "To Top", href: "#totop" },
+  { label: "To The Top", href: "#tothetop" },
   { label: "About Me", href: "#about" },
   { label: "Portfolio", href: "#mywork" },
   { label: "Services", href: "#services" },
@@ -15,7 +15,7 @@ const MENU_ITEMS = [
 ];
 
 const HeaderNavbar = () => {
-  const [menu, setMenu] = useState("totop");
+  const [menu, setMenu] = useState("tothetop");
   const [showSidebar, setShowSidebar] = useState(false);
 
   const onClickHandler = useCallback((navItem) => {
