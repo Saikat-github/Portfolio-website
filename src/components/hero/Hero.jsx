@@ -17,7 +17,7 @@ const Hero = () => {
           </a>
 
         </button>
-        <a href="/saikatresume (1).pdf" download>
+        <a href="/saikatsaha-resume.pdf" download>
           <button className="hero-resume px-10 py-2 border border-orange-600  text-white hover:opacity-75 rounded-full cursor-pointer text-sm transition duration-200">
             Download My Resume
           </button>
