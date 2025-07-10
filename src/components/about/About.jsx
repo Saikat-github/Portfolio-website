@@ -1,13 +1,11 @@
-import React from 'react'
-import theme_pattern from '../../assets/theme_pattern.svg'
-import profile_img from '../../assets/profile_img.svg'
+
 import Achieve from './Achieve'
 
 const About = () => {
   return (
     <div id='about'>
         <div className="about-title flex justify-center py-20">
-            <h1 className='text-6xl font-semibold'>About Me</h1>
+            <h1 className='text-6xl font-semibold text-center'>About Me</h1>
         </div>
         <div className="about md:mx-20 flex md:gap-20 mx-10 items-center justify-center">
             <div className="about-right">
@@ -18,23 +16,23 @@ const About = () => {
                 <div className="about-skills flex flex-col gap-4 text-xl ">
                     <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
                         <p className='w-32'>HTML & CSS</p>
-                        <hr className='w-1/2 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                        <hr className='w-1/2 border-none bg-orange-600 h-1 rounded-full'/>
                     </div>
                     <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
                         <p className='w-32'>React JS</p>
-                        <hr className='w-2/3 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                        <hr className='w-2/3 border-none bg-orange-600 h-1 rounded-full'/>
                     </div>
                     <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
                         <p className='w-32'>Javascript</p>
-                        <hr className='w-3/4 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                        <hr className='w-3/4 border-none bg-orange-600 h-1 rounded-full'/>
                     </div>
                     <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
                         <p className='w-32'>Node JS</p>
-                        <hr className='w-2/3 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                        <hr className='w-2/3 border-none bg-orange-600 h-1 rounded-full'/>
                     </div>
                     <div className="about-skill hover:scale-105 transition md:flex space-y-2 md:space-y-0 items-center gap-4">
                         <p className='w-32'>MongoDB</p>
-                        <hr className='w-3/4 border-none bg-gradient-to-r from-yellow-700 to-purple-700 h-1 rounded-full'/>
+                        <hr className='w-3/4 border-none bg-orange-600 h-1 rounded-full'/>
                     </div>
                 </div>
             </div>

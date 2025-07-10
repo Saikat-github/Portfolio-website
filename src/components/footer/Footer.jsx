@@ -1,7 +1,5 @@
 import React from 'react'
 import footer_logo from '../../assets/logo.png'
-import user_icon from '../../assets/user_icon.svg'
-import facebook from '../../assets/facebook-white.svg'
 import instagram from '../../assets/instagram-white.svg'
 import twitter from '../../assets/twitter-white.svg'
 import linkedin from '../../assets/linkedin.svg'
@@ -25,7 +23,7 @@ const Footer = () => {
             <hr />
 
             <p className="footer-bottom-left text-center">
-                &copy; 2025 Saikat Saha. All rights reserved.
+                &copy; {new Date(Date.now()).getFullYear()} Saikat Saha. All rights reserved.
             </p>
 
         </div>

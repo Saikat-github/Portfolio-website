@@ -24,7 +24,7 @@ const HeaderNavbar = () => {
   }, []);
 
   return (
-    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-xl lg:items-center  sticky top-0 z-20 bg-[rgb(0,0,33)]'>
+    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-xl lg:items-center  sticky top-0 z-20 bg-slate-950'>
       <Link to={"/"}><img src={logo} alt="Logo" className='nav-logo w-16 h-14 rounded-md object-cover' /></Link>
 
       {/* Menu open icon */}
@@ -46,7 +46,7 @@ const HeaderNavbar = () => {
         {MENU_ITEMS.map(({ label, href }) => (
           <li
             key={label}
-            className={`cursor-pointer ${menu === label ? "border-b-2 pb-2" : ""}`}
+            className={`cursor-pointer ${menu === label ? "border-b-2 border-b-orange-600 pb-2" : ""}`}
             onClick={() => onClickHandler(label)}
           >
             <AnchorLink offset={50} href={href}>
@@ -57,7 +57,7 @@ const HeaderNavbar = () => {
       </ul>
 
       {/* Connect Button */}
-      <div className="hidden lg:block nav-connect px-4 py-2 bg-gradient-to-r from-yellow-700 to-purple-700 rounded-full cursor-pointer hover:scale-105 transition duration-300 text-sm">
+      <div className="hidden lg:block nav-connect px-4 py-2 bg-orange-600 rounded-full cursor-pointer hover:scale-105 transition duration-300 text-sm">
         <AnchorLink offset={50} href="#contact">
           Connect With Me
         </AnchorLink>

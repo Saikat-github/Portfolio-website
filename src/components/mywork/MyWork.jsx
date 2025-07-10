@@ -17,23 +17,74 @@ const MyWork = () => {
   return (
     <div className="mywork flex flex-col items-center py-20" id='mywork'>
       <div className="mywork-title relative mb-32">
-        <h1 className='px-7 text-6xl font-semibold'>My Latest Work</h1>
+        <h1 className='px-7 text-6xl font-semibold text-center'>My Latest Work</h1>
         <img src={theme_pattern} className='absolute bottom-0 right-0 -z-10' />
       </div>
 
       <div className="mywork-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 mx-2 md:mx-0 transition duration-500">
         {mywork_data.map((work, idx) => {
-          return <a href={work.w_link ? work.w_link : notDeployedUrl} target="_blank" rel="noopener noreferrer" key={idx} className={`sm:w-96  rounded-xl ${showProjects.includes(idx) ? (!showmore ? "hidden" : "inline") : ""}`}>
-            <img src={work.w_img} key={idx} className='box-border w-96  cursor-pointer shadow-lg hover:shadow-pink-600 hover:rounded-xl transition duration-300 object-contain rounded-xl' />
-            <h1 className='text-center pt-4'>{work.w_info}</h1>
-          </a>
+          return <div
+            key={idx}
+            className={`sm:w-96 rounded-xl relative group ${showProjects.includes(idx) ? (!showmore ? "hidden" : "inline") : ""
+              }`}
+          >
+            {/* Image */}
+            <img
+              src={work.w_img}
+              className="box-border w-96 cursor-pointer transition duration-300 object-contain rounded-xl"
+            />
+
+            {/* Buttons */}
+            <div className=" max-sm:hidden absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 bg-black/70 sm:backdrop-blur-sm transition duration-300 sm:flex rounded-xl">
+              <a
+                href={work.liveLink || notDeployedUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-orange-600 text-white px-6 py-1 rounded-full text-sm"
+              >
+                See Live
+              </a>
+              <a
+                href={work.sourceCode || notDeployedUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-orange-600 text-white px-6 py-1 rounded-full text-sm "
+              >
+                Source code
+              </a>
+            </div>
+
+
+            <div className='flex justify-center gap-4 my-4 sm:hidden'>
+              <a
+                href={work.liveLink || notDeployedUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="border border-orange-600 text-white px-6 py-1 rounded text-sm hover:bg-orange-700"
+              >
+                See Live
+              </a>
+              <a
+                href={work.sourceCode || notDeployedUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="border border-orange-600 text-white px-6 py-1 rounded text-sm "
+              >
+                Source code
+              </a>
+            </div>
+
+            {/* Info */}
+            <h1 className="text-center sm:pt-4 text-sm text-white">{work.w_info}</h1>
+          </div>
+
 
 
         })}
       </div>
-      <div onClick={() => setShowmore((prev) => !prev)} className="mywork-showmore flex gap-4 px-12 py-4 border-2 rounded-full my-20 hover:gap-8 transition-[0.6s] hover:transition-[0.6s] cursor-pointer">
+      <div onClick={() => setShowmore((prev) => !prev)} className="mywork-showmore flex gap-4 px-8 py-2 border border-orange-600 rounded-full my-20 hover:gap-8 transition-[0.6s] hover:transition-[0.6s] cursor-pointer text-sm">
         <p >{showmore ? "Show Less" : "Show More"}</p>
-        <img src={arrow_icon} alt="" />
+        <img src={arrow_icon} className='w-6' />
       </div>
     </div>
   )
