@@ -9,7 +9,7 @@ import github from '../../assets/github.svg'
 const socialLinks = [
   {
     name: "Email",
-    link: "",
+    link: "mailto:sahasaikat782@gmail.com",
     logo: email
   },
   {
