@@ -36,7 +36,7 @@ const Hero = () => {
     <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-10' id='tothetop'>
       <img src={profile_img} className='mt-4 w-60 h-60 object-cover rounded-full' />
       <h1 className='sm:w-2/3 text-4xl text-center  font-semibold'>
-        Saikat Saha <br />
+        I'm Saikat Saha <br />
         <h2 className='text-lg'>Full Stack Web Developer</h2>
       </h1>
       {/* <p className=' text-sm md:text-lg md:w-2/3 text-center'>Experience in building real world, production grade projects</p> */}
