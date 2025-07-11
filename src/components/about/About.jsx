@@ -4,8 +4,8 @@ import Technologies from './Technologies'
 
 const About = () => {
     return (
-        <div id='about' className='my-10'>
-            <h1 className='text-6xl font-semibold text-center'>About Me</h1>
+        <div id='about' className=''>
+            <h1 className='text-6xl font-semibold text-center my-10'>About Me</h1>
             <div className="about-right p-4 md:mx-32 space-y-10">
                 <p className='text-center my-2 text-sm mx-6'>I am an experienced Web Developer with professional expertise in building production grade, highly optimized web application.</p>
                 <Technologies />

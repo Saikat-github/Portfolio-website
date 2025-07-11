@@ -16,7 +16,7 @@ const MyWork2 = () => {
     return (
         <div className="mywork flex flex-col items-center py-20" id='mywork'>
             <h1 className='px-7 text-6xl font-semibold text-center my-10'>My Latest Work</h1>
-            <div className="mywork-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 mx-6" >
+            <div className="mywork-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 md:gap-20 mx-6 md:mx-12 mt-4" >
                 {mywork_data.map((work, idx) => {
                     return <div
                         key={idx}
