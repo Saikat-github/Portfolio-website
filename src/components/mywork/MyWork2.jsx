@@ -16,17 +16,17 @@ const MyWork2 = () => {
     return (
         <div className="mywork flex flex-col items-center py-20" id='mywork'>
             <h1 className='px-7 text-6xl font-semibold text-center my-10'>My Latest Work</h1>
-            <div className="mywork-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 sm:gap-14 mx-6" >
+            <div className="mywork-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 mx-6" >
                 {mywork_data.map((work, idx) => {
                     return <div
                         key={idx}
-                        className={"bg-gray-700/50 sm:bg-gray-950 p-4 flex flex-col gap-6 rounded-xl justify-center items-center"}
+                        className={"bg-gray-700/50 sm:bg-gray-900 p-4 flex flex-col gap-6 rounded-xl justify-center items-center"}
                     >
-                        <p className='text-sm font-bold'>{work.name}</p>
+                        <p className='text-lg font-bold'>{work.name}</p>
                         <ul className='flex gap-2 flex-wrap'>
                             {
                                 work.technologies.map((tech, idx) => {
-                                    return <p className='py-1 px-3 bg-gray-800 text-xs rounded-full'>{tech}</p>
+                                    return <p key={idx} className='py-1 px-3 bg-gray-800 text-xs rounded-full'>{tech}</p>
                                 })
                             }
                         </ul>
