@@ -1,5 +1,4 @@
 import React from 'react'
-import theme_pattern from '../../assets/theme_pattern.svg'
 import Services_Data from '../../assets/services_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
 import { Link } from 'react-router-dom'
@@ -9,7 +8,6 @@ const Services = () => {
     <div className='services flex flex-col items-center justify-center gap-20 py-20 mx-4 sm:mx-40' id='services'>
         <div className="services-title relative">
             <h1 className='text-6xl font-semibold my-10 text-center'>My Services</h1>
-            <img src={theme_pattern} className='absolute right-0 bottom-0 -z-10'/>
         </div>
         <div className="services-container grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-20">
             {Services_Data.map((service, index) => {

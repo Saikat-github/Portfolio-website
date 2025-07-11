@@ -1,9 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import logo from '../../assets/logo.png';
-import menu_open from '../../assets/menu_open.svg';
-import menu_close from '../../assets/menu_close.svg';
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 
 const MENU_ITEMS = [
@@ -24,29 +22,33 @@ const HeaderNavbar = () => {
   }, []);
 
   return (
-    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-xl lg:items-center  sticky top-0 z-20 bg-slate-950'>
-      <Link to={"/"}><img src={logo} alt="Logo" className='nav-logo w-16 h-14 rounded-md object-cover' /></Link>
+    <div className='flex justify-between md:px-16 lg:px-28 px-6 py-4 md:items-center  sticky top-0 z-20 bg-black/80 backdrop-blur border-b border-b-gray-500'>
+      <Link to={"/"} className='font-semibold text-lg'>Saikat S.</Link>
 
       {/* Menu open icon */}
-      {!showSidebar && (
-        <img src={menu_open} onClick={() => setShowSidebar(true)} className="inline lg:hidden cursor-pointer w-6 -z-10" />
-      )}
+      {!showSidebar ?
+        <Menu onClick={() => setShowSidebar(true)} className="inline md:hidden cursor-pointer w-6 -z-10" />
+        :
+        <X onClick={() => setShowSidebar(false)} className="cursor-pointer w-6 ml-auto md:hidden" />
+      }
 
       {/* Navigation Menu */}
       <ul
-        className={`nav-menu flex lg:flex-row flex-col gap-10 absolute right-0 top-0 text-sm
-          ${showSidebar ? ' w-48 py-4 h-screen bg-[#1F0016] px-12 space-y-6' : 'hidden lg:flex'} lg:static lg:w-auto lg:py-0 lg:h-auto lg:bg-transparent lg:px-0 lg:space-y-0`}
+        className={`nav-menu flex md:flex-row items-center gap-10 absolute right-0 top-14 text-sm
+          ${showSidebar ? ' w-full py-4 h-screen bg-black/90 backdrop-blur px-12 space-y-6 flex-col' : 'hidden md:flex'} md:static md:w-auto md:py-0 md:h-auto md:bg-transparent md:px-0 md:space-y-0`}
       >
-        {/* Menu close icon */}
-        {showSidebar && (
-          <img src={menu_close} onClick={() => setShowSidebar(false)} className="cursor-pointer w-6 ml-auto lg:hidden" />
-        )}
+        {/* Resume download */}
+        <a href="/saikatsaha-resume.pdf" download className='md:hidden inline'>
+          <button className="bg-blue-950/70 text-blue-800 py-2 px-4   hover:opacity-90 rounded-full cursor-pointer text-sm transition duration-200">
+            Resume
+          </button>
+        </a>
 
         {/* Render menu items */}
         {MENU_ITEMS.map(({ label, href }) => (
           <li
             key={label}
-            className={`cursor-pointer ${menu === label ? "border-b-2 border-b-orange-600 pb-2" : ""}`}
+            className={`mx-auto cursor-pointer border-b ${menu === label ? "border-slate-200" : " border-transparent"}`}
             onClick={() => onClickHandler(label)}
           >
             <AnchorLink offset={50} href={href}>
@@ -56,12 +58,13 @@ const HeaderNavbar = () => {
         ))}
       </ul>
 
-      {/* Connect Button */}
-      <div className="hidden lg:block nav-connect px-4 py-2 bg-orange-600 rounded-full cursor-pointer hover:scale-105 transition duration-300 text-sm">
-        <AnchorLink offset={50} href="#contact">
-          Connect With Me
-        </AnchorLink>
-      </div>
+
+      {/* Resume download */}
+      <a href="/saikatsaha-resume.pdf" download className='md:inline hidden'>
+        <button className="bg-blue-950/70 text-blue-800 py-2 px-4   hover:opacity-90 rounded-full cursor-pointer text-sm transition duration-200">
+          Resume
+        </button>
+      </a>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
-    <div className='font-Poppins text-white bg-slate-950'>
+    <div className='font-Inter text-gray-200 bg-black'>
       <ScrollToTop />
       <main className='min-h-screen'>
       <Outlet />

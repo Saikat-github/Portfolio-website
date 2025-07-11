@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
@@ -51,11 +50,10 @@ const Contact = () => {
         <div className="contact flex flex-col items-center gap-16 py-20 px-2" id='contact'>
             <div className="contact-title relative">
                 <h1 className='text-6xl font-semibold text-center'>Get in touch</h1>
-                <img src={theme_pattern} className='absolute right-0 bottom-0 -z-10' />
             </div>
             <div className="contact-section flex flex-col lg:flex-row gap-36 items-center">
                 <div className="contact-left flex flex-col gap-8">
-                    <h1 className='text-5xl font-medium text-orange-600'>Let's talk </h1>
+                    <h1 className='text-5xl font-medium text-gray-200'>Let's talk </h1>
                     <div className="contact-details flex flex-col gap-7 text-gray-100 text-xs">
                         <div className="contact-detail  flex items-center gap-5">
                             <img src={mail_icon} alt="" /> <p>saikatservices@gmail.com</p>
@@ -71,18 +69,18 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form onSubmit={handleSubmit(onSubmit)} className='contact-right flex flex-col items-start gap-2 w-full'>
+                <form onSubmit={handleSubmit(onSubmit)} className='contact-right flex flex-col gap-2 w-full'>
                     <label className='text-sm text-gray-100' >Your Name</label>
-                    <input className='border-none outline-none lg:w-96 w-[80%] h-10 rounded-lg bg-slate-800 text-gray-100 text-xs px-2' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
+                    <input className='border-none outline-none rounded-lg bg-gray-900 text-gray-100 text-xs px-4 py-2' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
 
                     <label className='text-sm text-gray-100'>Your Email</label>
-                    <input className='border-none outline-none lg:w-96 w-[80%] h-10 rounded-lg bg-slate-800 text-gray-100 text-xs px-2' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
+                    <input className='border-none outline-none rounded-lg bg-gray-900 text-gray-100 text-xs px-4 py-2' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
 
                     <label className='text-sm text-gray-100'>Write your message here</label>
-                    <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none outline-none lg:w-96 w-[80%] h-10 lg:h-32 rounded-lg bg-slate-800 text-gray-100 text-xs px-2 pt-4'></textarea>
+                    <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none outline-none lg:h-32 rounded-lg bg-gray-900 text-gray-100 text-xs px-4 py-2 pt-4'></textarea>
 
                     <div className='flex items-center gap-2 mt-2'>
-                    <button className='contact-submit py-2 px-6 border border-orange-600 rounded-full hover:scale-105 transition-[0.5s] text-sm' type='submit' disabled={isSubmitting}>{error ? <span>{error}</span> : "Submit Now" }</button>
+                    <button className='contact-submit py-2 px-6 border border-slate-800 rounded-full hover:scale-105 transition-[0.5s] text-xs' type='submit' disabled={isSubmitting}>{error ? <span>{error}</span> : "Submit Now" }</button>
                     {loader ? <span className='w-6 h-6 border-4 rounded-full animate-spin border-dotted'></span> : null}
                     </div>
                 </form>

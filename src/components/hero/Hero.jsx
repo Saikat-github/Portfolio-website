@@ -1,27 +1,53 @@
 import React from 'react'
 import profile_img from '../../assets/profile_img.webp'
+import twitter from '../../assets/twitter-white.svg'
+import linkedin from '../../assets/linkedin.svg'
+import email from '../../assets/email.svg'
+import github from '../../assets/github.svg'
 
+
+const socialLinks = [
+  {
+    name: "Email",
+    link: "",
+    logo: email
+  },
+  {
+    name: "Github",
+    link: "https://github.com/Saikat-github",
+    logo: github
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/saikat-saha1",
+    logo: linkedin
+  },
+    {
+    name: "Twitter",
+    link: "https://x.com/Saikaatsaha",
+    logo: twitter
+  }
+]
 
 
 
 const Hero = () => {
   return (
-    <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-2' id='tothetop'>
+    <div className='hero flex items-center flex-col gap-12 pb-20 pt-10 px-10' id='tothetop'>
       <img src={profile_img} className='mt-4 w-60 h-60 object-cover rounded-full' />
-      <h1 className='sm:w-2/3 text-3xl sm:text-5xl text-center text-white font-semibold'>I'm <span className='text-orange-600'>Saikat Saha</span>, a Passionate <span className='text-orange-600'>Full Stack Web Developer</span> based in India.</h1>
-      <p className='text-white text-xl sm:w-2/3 text-center'>With experience in building real world, production grade projects</p>
-      <div className="hero-action flex flex-col md:flex-row gap-4 text-xl text-[rgb(0,0,33)]">
-        <button className="hero-connect px-10 py-2 border border-orange-600  text-white hover:opacity-75 rounded-full cursor-pointer text-sm transition duration-200">
-          <a href="https://github.com/Saikat-github" target="_blank" rel="noopener noreferrer">
-            Visit Github
-          </a>
-
-        </button>
-        <a href="/saikatsaha-resume.pdf" download>
-          <button className="hero-resume px-10 py-2 border border-orange-600  text-white hover:opacity-75 rounded-full cursor-pointer text-sm transition duration-200">
-            Download My Resume
-          </button>
-        </a>
+      <h1 className='sm:w-2/3 text-4xl text-center  font-semibold'>
+        Saikat Saha <br />
+        <h2 className='text-lg'>Full Stack Web Developer</h2>
+      </h1>
+      {/* <p className=' text-sm md:text-lg md:w-2/3 text-center'>Experience in building real world, production grade projects</p> */}
+      <div className='flex gap-4 sm:gap-8'>
+        {
+          socialLinks?.map((link, idx) => (
+            <a href={link.link} target="_blank" rel="noopener noreferrer" key={idx}>
+              <img src={link.logo} alt={link.name} className='w-10 h-10 border border-gray-500 p-2 rounded-lg opacity-85 hover:opacity-70 transition-all duration-300' />
+            </a>
+          ))
+        }
       </div>
     </div>
   )

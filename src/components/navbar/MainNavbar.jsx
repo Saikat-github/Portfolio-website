@@ -24,8 +24,8 @@ const MainNavbar = () => {
   }, []);
 
   return (
-    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-sm lg:items-center  sticky top-0 z-20 bg-slate-950'>
-      <Link to={"/"}><img src={logo} alt="Logo" className='nav-logo w-16 h-14 rounded-md object-cover' /></Link>
+    <div className='flex justify-between h-24 lg:px-12 px-4 py-5 text-sm lg:items-center  sticky top-0 z-20 bg-black'>
+      <Link to={"/"}>Saikat Saha</Link>
       <Link to={"/"} className='text-orange-600 px-4 py-2 rounded'>
       Back Home
       </Link>

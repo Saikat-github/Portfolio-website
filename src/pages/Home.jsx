@@ -1,5 +1,4 @@
-import React from 'react'
-import { About, Contact, Footer, HeaderNavbar, Hero, MyWork, Services } from '../components'
+import { About, Contact, HeaderNavbar, Hero, MyWork2 } from '../components'
 
 const Home = () => {
   return (
@@ -8,8 +7,7 @@ const Home = () => {
       <Hero />
       <hr className='w-3/4 mx-auto bg-sky-800' />
       <About />
-      <MyWork />
-      <Services />
+      <MyWork2 />
       <Contact />
 
     </div>
