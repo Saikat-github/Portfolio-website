@@ -20,13 +20,13 @@ const MyWork2 = () => {
                 {mywork_data.map((work, idx) => {
                     return <div
                         key={idx}
-                        className={"bg-gray-700/40 p-4 flex flex-col gap-6 rounded-xl justify-center items-center"}
+                        className={"bg-white/5 p-6 flex flex-col gap-6 rounded-xl justify-center items-center"}
                     >
                         <p className='text-lg font-bold'>{work.name}</p>
                         <ul className='flex gap-2 flex-wrap'>
                             {
                                 work.technologies.map((tech, idx) => {
-                                    return <p key={idx} className='py-1 px-3 bg-gray-600/40 text-xs rounded-full'>{tech}</p>
+                                    return <p key={idx} className='py-1 px-3 bg-white/5 text-xs rounded-full'>{tech}</p>
                                 })
                             }
                         </ul>
