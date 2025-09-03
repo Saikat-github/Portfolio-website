@@ -15,6 +15,15 @@ import project10_img from '../assets/project_10.webp'
 const mywork_data = [
     {
         no: 1,
+        name: "Minimalist Gyms",
+        technologies: ["ReactJS", "TailwindCSS", "Firebase"],
+        img: project3_img,
+        info: "A modern gym management platform with online admission, payments, member verification, and separate admin/user dashboards.",
+        sourceCode: "https://github.com/Saikat-github/gymwebsite-2-frontend-MERN",
+        liveLink: "https://gymwebsite-2-frontend-mern.vercel.app/"
+    },
+    {
+        no: 2,
         name: "Bookmydoctor",
         technologies: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "TailwindCSS"],
         img: project1_img,
@@ -23,22 +32,13 @@ const mywork_data = [
         liveLink: "https://bookmydoctor-userpanel.vercel.app/"
     },
     {
-        no: 2,
+        no: 3,
         name: "Tomato",
         technologies: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "TailwindCSS"],
         img: project2_img,
         info: "A food ordering app with online payments and real-time order tracking, inspired by Zomato’s workflow.",
         sourceCode: "https://github.com/Saikat-github/FoodDeliver-MyVersion",
         liveLink: "https://fooddeliver-myversion-frontend.onrender.com/"
-    },
-    {
-        no: 3,
-        name: "Minimalist Gyms",
-        technologies: ["ReactJS", "TailwindCSS", "Firebase"],
-        img: project3_img,
-        info: "A modern gym management platform with online admission, payments, member verification, and separate admin/user dashboards.",
-        sourceCode: "https://github.com/Saikat-github/gymwebsite-1-frontend",
-        liveLink: "https://gymwebsite-1-frontend.vercel.app/"
     },
     {
         no: 4,
