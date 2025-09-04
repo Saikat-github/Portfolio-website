@@ -71,13 +71,13 @@ const Contact = () => {
 
                 <form onSubmit={handleSubmit(onSubmit)} className='contact-right flex flex-col gap-2 w-full'>
                     <label className='text-sm text-gray-100' >Your Name</label>
-                    <input className='border-none outline-none rounded-lg bg-white/10 text-gray-100 text-xs px-4 py-2' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
+                    <input className='border-none outline-none rounded-lg bg-slate-400/20 text-gray-100 text-xs px-4 py-2' type="text" placeholder='Enter your name' {...register("name", {required: true})} />
 
                     <label className='text-sm text-gray-100'>Your Email</label>
-                    <input className='border-none outline-none rounded-lg bg-white/10 text-gray-100 text-xs px-4 py-2' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
+                    <input className='border-none outline-none rounded-lg bg-slate-400/20 text-gray-100 text-xs px-4 py-2' type="email" placeholder='Enter your email' {...register("email", {required: true})} />
 
                     <label className='text-sm text-gray-100'>Write your message here</label>
-                    <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none outline-none lg:h-32 rounded-lg bg-white/10 text-gray-100 text-xs px-4 py-2 pt-4'></textarea>
+                    <textarea {...register("message", {required: true})} placeholder='Enter your message' className='border-none outline-none lg:h-32 rounded-lg bg-slate-400/20 text-gray-100 text-xs px-4 py-2 pt-4'></textarea>
 
                     <div className='flex items-center gap-2 mt-2'>
                     <button className='contact-submit py-2 px-6 border border-slate-800 rounded-full hover:scale-105 transition-[0.5s] text-xs' type='submit' disabled={isSubmitting}>{error ? <span>{error}</span> : "Submit Now" }</button>

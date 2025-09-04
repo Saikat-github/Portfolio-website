@@ -20,13 +20,13 @@ const MyWork2 = () => {
                 {mywork_data.map((work, idx) => {
                     return <div
                         key={idx}
-                        className={"bg-white/5 p-6 flex flex-col gap-6 rounded-xl justify-center items-center"}
+                        className={"bg-slate-400/15 p-6 flex flex-col gap-6 rounded-xl justify-center items-center"}
                     >
                         <p className='text-lg font-bold'>{work.name}</p>
                         <ul className='flex gap-2 flex-wrap'>
                             {
                                 work.technologies.map((tech, idx) => {
-                                    return <p key={idx} className='py-1 px-3 bg-white/5 text-xs rounded-full'>{tech}</p>
+                                    return <p key={idx} className='py-1 px-4 bg-slate-300/15 text-xs rounded-full'>{tech}</p>
                                 })
                             }
                         </ul>
@@ -61,7 +61,7 @@ const MyWork2 = () => {
                 href="https://github.com/Saikat-github/NotDeployed"
                 target="_blank"
                 rel="noreferrer"
-                className="flex gap-4 px-8 py-2 border border-gray-700 rounded-full my-20 hover:gap-8 cursor-pointer text-xs transition-all duration-300"
+                className="flex gap-4 px-8 py-2 border border-slate-400/30 rounded-full my-20 hover:gap-8 cursor-pointer text-xs transition-all duration-300"
             >
                 <p >{showmore ? "Show Less" : "Show More"}</p>
                 <img src={arrow_icon} className='w-6' />

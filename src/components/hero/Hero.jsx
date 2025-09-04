@@ -44,7 +44,7 @@ const Hero = () => {
         {
           socialLinks?.map((link, idx) => (
             <a href={link.link} target="_blank" rel="noopener noreferrer" key={idx}>
-              <img src={link.logo} alt={link.name} className='w-10 h-10 border border-gray-500 p-2 rounded-lg opacity-85 hover:opacity-70 transition-all duration-300' />
+              <img src={link.logo} alt={link.name} className='w-10 h-10 border-2 border-slate-400/30 bg-slate-400/20 p-2 rounded-lg opacity-85 hover:opacity-70 transition-all duration-300' />
             </a>
           ))
         }
